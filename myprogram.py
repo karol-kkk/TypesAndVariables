@@ -139,6 +139,6 @@ a_side = int(a)
 b_side = int(b)
 c_side = int(c)
 cube_volume2 = a_side * b_side * c_side
-cube_surface_area2 = 2 * a_side * b_side + a_side * c_side + b_side * c_side
+cube_surface_area2 = 2 * (a_side * b_side + a_side * c_side + b_side * c_side)
 print(f'The volume of a cube with sides {a_side}, {b_side}, {c_side} is {cube_volume2}')
 print(f'The surface of a cube with sides {a_side}, {b_side}, {c_side} is {cube_surface_area2}')
