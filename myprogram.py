@@ -126,3 +126,19 @@ cube_volume = cube_side ** 3
 cube_surface_area = 6 * cube_side ** 2
 print(f'The volume of a cube with side {cube_side} is {cube_volume}')
 print(f'The surface area of a cube with side {cube_side} is {cube_surface_area}')
+
+###
+# A program that calculates the volume
+# and surface area of ​​a cuboid with sides a, b, and c.
+# Read the dimensions of the cuboid from the keyboard.
+#
+a = input('a=')
+b = input ('b=')
+c = input('c=')
+a_side = int(a)
+b_side = int(b)
+c_side = int(c)
+cube_volume2 = a_side * b_side * c_side
+cube_surface_area2 = 2 * a_side * b_side + a_side * c_side + b_side * c_side
+print(f'The volume of a cube with sides {a_side}, {b_side}, {c_side} is {cube_volume2}')
+print(f'The surface of a cube with sides {a_side}, {b_side}, {c_side} is {cube_surface_area2}')
