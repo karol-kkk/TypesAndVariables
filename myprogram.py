@@ -43,13 +43,6 @@ b = 8
 diagonal = math.sqrt(a**2 + b**2)
 print(diagonal)
 
-###
-# A program that calculates the distance to the horizon from a height given in meters from the keyboard
-import math
-height = input('Enter the height in meters: ')
-height = int(height)
-distance = height * 1000
-distance = 3.57 * math.sqrt(height)
 
 ###
 # A program that calculates the distance to the horizon from a height given in meters from the keyboard
