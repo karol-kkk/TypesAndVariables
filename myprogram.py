@@ -113,8 +113,7 @@ print(f'And your full name is {full_name}')
 ###
 # A program to calculate the volume and surface area of ​​a cube.
 # 
-cube_side_string = input('Enter cube side: ')
-cube_side = int(cube_side_string)
+cube_side = int(input('Enter cube side: '))
 cube_volume = cube_side ** 3
 cube_surface_area = 6 * cube_side ** 2
 print(f'The volume of a cube with side {cube_side} is {cube_volume}')
@@ -125,13 +124,310 @@ print(f'The surface area of a cube with side {cube_side} is {cube_surface_area}'
 # and surface area of ​​a cuboid with sides a, b, and c.
 # Read the dimensions of the cuboid from the keyboard.
 #
-a = input('a=')
-b = input ('b=')
-c = input('c=')
-a_side = int(a)
-b_side = int(b)
-c_side = int(c)
+a_side = int(input('a='))
+b_side = int(input('b='))
+c_side = int(input('c='))
 cube_volume2 = a_side * b_side * c_side
 cube_surface_area2 = 2 * (a_side * b_side + a_side * c_side + b_side * c_side)
-print(f'The volume of a cube with sides {a_side}, {b_side}, {c_side} is {cube_volume2}')
-print(f'The surface of a cube with sides {a_side}, {b_side}, {c_side} is {cube_surface_area2}')
+print(f'The volume of a box with sides {a_side}, {b_side}, {c_side} is {cube_volume2}')
+print(f'The surface area of a box with sides {a_side}, {b_side}, {c_side} is {cube_surface_area2}')
+
+
+### A program that calculates and prints both the amount and its VAT.
+amount = float(input("Enter the amount: "))
+vat = amount * 0.23
+print(f"Amount: {amount:.2f}")
+print(f"VAT (23%): {vat:.2f}")
+
+### A program that calculates price with discount and reduction
+price = float(input("Enter price: "))
+discount_percentage = float(input("Enter discount %: "))
+discount_amount = (discount_percentage / 100) * price
+discounted_price = price - discount_amount
+print(f"Price with discount: {discounted_price:.2f}")
+print(f"Reduction: {discount_amount:.2f}")
+
+###
+# A program that calculates the number of characters
+# of your name, surname and full name
+#
+name = 'Karol'   
+surname = 'Matoga' 
+characters_in_name = len(name)
+characters_in_surname = len(surname)
+full_name = name + ' ' + surname
+characters_in_full_name = len(full_name)
+print(f'Your name has {characters_in_name} characters')
+print(f'Your surname has {characters_in_surname} characters')
+print(f'Your full name has {characters_in_full_name} characters')
+
+###
+# A program that prints your initials
+#
+name = 'George'
+surname = 'Flinston'
+print(name[0] + surname[0])
+
+# A program that prints a university abbreviation
+#   
+university = "Krakow University of Economics"
+words = university.split()
+abbreviation = words[0][0] + words[1][0] + words[3][0]
+
+print(abbreviation)
+
+###
+# A program for printing detailed information.
+#
+employee = "Mr. John May, born on 1998-02-16"
+print(f'Name: {employee[4:8]}')
+print(f'Surname: {employee[9:12]}')
+print(f'Born: {employee[-11:]}')
+print(f'Initials: {employee[4] + employee[9]}')
+
+###
+# a program that prints a 9-digit telephone number
+# entered from the keyboard as three groups of 3 digits each,
+# separated by a dash character.
+#
+phone = input('Enter phone number: ')
+formatted_phone = f'{phone[:3]}-{phone[3:6]}-{phone[6:]}'
+print(f'Phone number: {formatted_phone}')
+
+
+###
+# A program to print numerical representations of characters.
+#
+print(f'a {ord('a')}')
+print(f'b {ord('b')}')
+print(f'z {ord('z')}')
+print(f'A {ord('A')}')
+print(f'B {ord('B')}')
+print(f'Z {ord('Z')}')
+print(f'1 {ord('1')}')
+print(f'= {ord('=')}')
+print(f'+ {ord('+')}')
+print(f'€ {ord('€')}')
+
+###
+# A program that prints a numerical representation of each letter of your name.
+#
+name = 'Karol' # replace John with your name
+print(f'The letter {name[0]} has a code {ord(name[0])}')
+print(f'The letter {name[1]} has a code {ord(name[1])}')
+print(f'The letter {name[2]} has a code {ord(name[2])}')
+print(f'The letter {name[3]} has a code {ord(name[3])}')
+print(f'The letter {name[4]} has a code {ord(name[4])}')
+
+
+
+###
+# A program that calculates
+# how many letters are between two given letters
+#
+first = input('Enter first letter: ')
+last = input('Enter second letter: ')
+first_letter_code = ord(first)
+last_letter_code = ord(last)
+number_of_letters = abs(first_letter_code - last_letter_code) - (1 if first != last else 0)
+print(f'Between {first} and {last} is {number_of_letters} letters')
+
+###
+# Character code conversion
+#
+print(chr(67),chr(111),chr(111),chr(108),chr(33))
+
+
+# String manipulation
+#
+
+movie = "The Lord of the Rings: The Return of the King"
+
+# print number of characters
+print('Number of characters: ', len(movie))
+
+# print title in capital letters
+print('Title in uppercase: ', movie.upper())
+
+# print title in small letters
+print('Title in lowercase: ', movie.lower())
+
+# print how many times the vowel "e" appears in the title
+print('Number of times "e" appears: ', movie.count('e'))
+
+# print where in the text is the word "Lord"
+print('Position of "Lord": ', movie.find('Lord'))
+
+# print where in the text is the word "dragon"
+print('Position of "dragon": ', movie.find('dragon'))
+
+
+###
+# People up to and including 26 years of age are exempt
+# from paying taxes in Poland. Write a program that,
+# based on the person's age entered from the keyboard,
+# prints True if the person is exempt from paying taxes
+# and prints False otherwise.
+#
+age = int(input('Enter age: '))
+no_tax = age <= 26
+print(f'Exemption from paying taxes: {no_tax}')
+
+###
+# A program that checks whether the password length
+# read from the keyboard is correct.
+#
+password = input('Enter password: ')
+password_ok = len(password) >= 8
+print(f'Password length is valid: {password_ok}')
+
+###
+# A program that checks whether the number entered
+# from the keyboard is even.
+# A number is even if the remainder when divided by 2 is 0.
+# What operator do you need to use to calculate
+# the remainder of division?
+#
+
+number = int(input('Enter number: '))
+even = number % 2 == 0
+print(f'Number is even: {even}')
+
+### A program that calculates diameter of a tree based on circumference
+
+import math
+
+circumference = float(input("Enter tree circumference in cm: "))
+diameter = circumference / math.pi
+
+if diameter >= 50:
+    print("Tree can be cut down: True")
+else:
+    print("Tree can be cut down: False")
+
+
+    ###
+# Vehicle registration numbers in Krakow start
+# with the letters KR or KK. Write a program that checks
+# whether the vehicle registration number entered
+# from the keyboard means a vehicle from Krakow.
+# Print True whether a car is from Krakow or False otherwise.
+#
+car_number = input('Enter car registration number: ')
+is_krakow = car_number[0:2] == "KR" or car_number[:2] == "KK"
+print(f'Car is from Krakow: {is_krakow}')
+
+### A program that checks if a vehicle speed is between 40 and 140kmh
+vehicle_speed = float(input("Enter the speed: "))
+if 40 <= vehicle_speed <= 140:
+    print("Speed is correct.")
+else:
+    print("Speed is incorrect.")
+
+    ###
+# A program that prints results of three dice rolls
+# and the sum of dice rolled.
+#
+import random
+dice_roll_1 = random.randint(1, 6)
+dice_roll_2 = random.randint(1, 6)
+dice_roll_3 = random.randint(1, 6)
+total = dice_roll_1 + dice_roll_2 + dice_roll_3
+print(f'First dice roll: {dice_roll_1}')
+print(f'Second dice roll: {dice_roll_2}')
+print(f'Third dice roll: {dice_roll_3}')
+print(f'Total: {total}')
+
+### Write a program that prints the number of dice rolled
+### and the value True if the number rolled is 1 or 6
+import random
+
+dice_rolled = random.randint(1, 6)
+special_number = dice_rolled == 1 or dice_rolled == 6
+print(f'Dice rolled: {dice_rolled}')
+print(f'Special number (1 or 6): {special_number}')
+
+
+###
+# A program that enables a user to challenge a computer.
+# The computer throws dice. Then, the user then tries to guess
+# the number from dice by entering a number from 1 to 6
+# from the keyboard. If the user has guessed the number
+# from the dice, the computer prints True. Otherwise,
+# the computer prints False.
+#
+import random
+# COMPUTER TURN
+computer = random.randint(1, 6)
+# YOUR TURN
+you = int(input("Guess the number: "))
+win = you == computer
+print(f'You won: {win}')
+
+
+### A program to calculate the area and circumference of a circle.
+import math  
+
+radius = float(input('Enter the radius of the circle: '))
+area = math.pi * radius ** 2
+circumference = 2 * math.pi * radius
+print(f'Area of the circle: {area:.2f}')
+print(f'Circumference of the circle: {circumference:.2f}')
+
+
+### A program that converts Celsius to Kelvin and Fahrenheit
+#Read the temperature in Celsius from the keyboard
+celsius = float(input("Enter temperature in degrees Celsius: "))
+
+#Convert Celsius to Kelvin
+kelvin = celsius + 273.15
+
+#Convert Celsius to Fahrenheit
+fahrenheit = (celsius * 9/5) + 32
+
+#Print the results
+print(f"Temperature in Kelvin: {kelvin:.2f}")
+print(f"Temperature in Fahrenheit: {fahrenheit:.2f}")
+
+
+# A program that prints your height both in cm and in feet and inches.
+cm = 170
+feet = cm // 30.48
+remaining_cm = cm % 30.48
+inches = remaining_cm // 2.54
+
+print(f'I am {cm}cm tall, i.e. {int(feet)} feet and {int(inches)} inches')
+
+
+# A program that reads a SWIFT code from the keyboard
+# and prints the bank code and country code.
+
+swift = input('Enter SWIFT code: ')
+bank_code = swift[:4]
+country_code = swift[4:6]
+
+print(f'Bank Code: {bank_code}')
+print(f'Country Code: {country_code}')
+
+
+###
+# The program calculates the cost of transporting goods
+# based on the given distance in km, fuel price per 1 liter,
+# and fuel consumption in liters per 100 km.
+#
+distance = int(input('Enter distance in km: '))
+fuel_price = float(input('Enter fuel price per liter: '))
+fuel_consumption = float(input('Enter fuel consumption in liters per 100km: '))
+total_fuel_consumption = distance * (fuel_consumption / 100)
+total_cost = total_fuel_consumption * fuel_price
+print(f'Total fuel consumption: {total_fuel_consumption:.2f} liters')
+print(f'Total cost of transportation: {total_cost:.2f} zł')
+
+
+# A program that converts a decimal number to binary and hexadecimal
+
+number = int(input('Enter number: '))
+binary_number = bin(number)
+hexadecimal_number = hex(number)
+print(f'Binary number: {binary_number}')
+print(f'Hexadecimal number: {hexadecimal_number}')
