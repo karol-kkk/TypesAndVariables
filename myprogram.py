@@ -76,10 +76,9 @@ age = "23"
 age = int(age)
 height2 = "150"
 height2 = int(height2)
-agesix = age + 6
 print(f"My name is {name}.")
 print(f"I am {age} years old, and my height is {height2} cm")
-print(f"In 6 years I will be {agesix} years old.")
+print(f"In 6 years I will be {age + 6} years old.")
 
 ###
 # Write a program that calculates and prints
@@ -268,8 +267,8 @@ print('Position of "dragon": ', movie.find('dragon'))
 # prints True if the person is exempt from paying taxes
 # and prints False otherwise.
 #
-age = int(input('Enter age: '))
-no_tax = age <= 26
+ageinput = int(input('Enter age: '))
+no_tax = ageinput <= 26
 print(f'Exemption from paying taxes: {no_tax}')
 
 ###
