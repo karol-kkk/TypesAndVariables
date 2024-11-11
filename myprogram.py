@@ -50,8 +50,7 @@ import math
 height = input('Enter the height in meters: ')
 height = int(height)
 distance = 3.57 * math.sqrt(height)
-distance2 = distance * 1000
-print("Distance to the horizon is", distance2, "km")
+print("Distance to the horizon is", distance, "km")
 
 ###
 # A program that calculates and prints:
@@ -75,11 +74,11 @@ print("Southern Hemisphere in %: ", south/total*100)
 name = "Adam"
 age = "23"
 age = int(age)
-height = "150"
-height = int(height)
+height2 = "150"
+height2 = int(height2)
 agesix = age + 6
 print(f"My name is {name}.")
-print(f"I am {age} years old, and my height is {height} cm")
+print(f"I am {age} years old, and my height is {height2} cm")
 print(f"In 6 years I will be {agesix} years old.")
 
 ###
@@ -151,12 +150,12 @@ print(f"Reduction: {discount_amount:.2f}")
 # A program that calculates the number of characters
 # of your name, surname and full name
 #
-name = 'Karol'   
-surname = 'Matoga' 
-characters_in_name = len(name)
-characters_in_surname = len(surname)
-full_name = name + ' ' + surname
-characters_in_full_name = len(full_name)
+name1 = 'Karol'   
+surname1 = 'Matoga' 
+characters_in_name = len(name1)
+characters_in_surname = len(surname1)
+full_name1 = name1 + ' ' + surname1
+characters_in_full_name = len(full_name1)
 print(f'Your name has {characters_in_name} characters')
 print(f'Your surname has {characters_in_surname} characters')
 print(f'Your full name has {characters_in_full_name} characters')
@@ -164,9 +163,9 @@ print(f'Your full name has {characters_in_full_name} characters')
 ###
 # A program that prints your initials
 #
-name = 'George'
-surname = 'Flinston'
-print(name[0] + surname[0])
+name2 = 'George'
+surname2 = 'Flinston'
+print(name2[0] + surname2[0])
 
 # A program that prints a university abbreviation
 #   
@@ -212,12 +211,12 @@ print(f'€ {ord('€')}')
 ###
 # A program that prints a numerical representation of each letter of your name.
 #
-name = 'Karol' # replace John with your name
-print(f'The letter {name[0]} has a code {ord(name[0])}')
-print(f'The letter {name[1]} has a code {ord(name[1])}')
-print(f'The letter {name[2]} has a code {ord(name[2])}')
-print(f'The letter {name[3]} has a code {ord(name[3])}')
-print(f'The letter {name[4]} has a code {ord(name[4])}')
+name3 = 'Karol' # replace John with your name
+print(f'The letter {name3[0]} has a code {ord(name3[0])}')
+print(f'The letter {name3[1]} has a code {ord(name3[1])}')
+print(f'The letter {name3[2]} has a code {ord(name3[2])}')
+print(f'The letter {name3[3]} has a code {ord(name3[3])}')
+print(f'The letter {name3[4]} has a code {ord(name3[4])}')
 
 
 
@@ -289,8 +288,8 @@ print(f'Password length is valid: {password_ok}')
 # the remainder of division?
 #
 
-number = int(input('Enter number: '))
-even = number % 2 == 0
+numberint = int(input('Enter number: '))
+even = numberint % 2 == 0
 print(f'Number is even: {even}')
 
 ### A program that calculates diameter of a tree based on circumference
@@ -332,11 +331,11 @@ import random
 dice_roll_1 = random.randint(1, 6)
 dice_roll_2 = random.randint(1, 6)
 dice_roll_3 = random.randint(1, 6)
-total = dice_roll_1 + dice_roll_2 + dice_roll_3
+sum = dice_roll_1 + dice_roll_2 + dice_roll_3
 print(f'First dice roll: {dice_roll_1}')
 print(f'Second dice roll: {dice_roll_2}')
 print(f'Third dice roll: {dice_roll_3}')
-print(f'Total: {total}')
+print(f'Total: {sum}')
 
 ### Write a program that prints the number of dice rolled
 ### and the value True if the number rolled is 1 or 6
@@ -415,10 +414,10 @@ print(f'Country Code: {country_code}')
 # based on the given distance in km, fuel price per 1 liter,
 # and fuel consumption in liters per 100 km.
 #
-distance = int(input('Enter distance in km: '))
+distanceinput = int(input('Enter distance in km: '))
 fuel_price = float(input('Enter fuel price per liter: '))
 fuel_consumption = float(input('Enter fuel consumption in liters per 100km: '))
-total_fuel_consumption = distance * (fuel_consumption / 100)
+total_fuel_consumption = distanceinput * (fuel_consumption / 100)
 total_cost = total_fuel_consumption * fuel_price
 print(f'Total fuel consumption: {total_fuel_consumption:.2f} liters')
 print(f'Total cost of transportation: {total_cost:.2f} zł')
@@ -426,8 +425,8 @@ print(f'Total cost of transportation: {total_cost:.2f} zł')
 
 # A program that converts a decimal number to binary and hexadecimal
 
-number = int(input('Enter number: '))
-binary_number = bin(number)
-hexadecimal_number = hex(number)
+numberinput = int(input('Enter number: '))
+binary_number = bin(numberinput)
+hexadecimal_number = hex(numberinput)
 print(f'Binary number: {binary_number}')
 print(f'Hexadecimal number: {hexadecimal_number}')
